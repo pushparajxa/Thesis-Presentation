@@ -1,0 +1,44 @@
+Introdutction
+---------------------------------------------
+Snapshot: 
+ Snapshot means capturing the state of the storage system at an exact point in time and is used to provide full
+recovery of data when lost.
+
+Big Data Systems & Enterprise-Grade Storage Systems
+  Apache Hadoop, Cassandra, HBase 
+
+Use-Case Scenarios
+---------------------------------------------
+Software Upgrades:
+
+Rollback from Errors:
+  Operational as well as analytical applications manipulate the data in the distributed file system on behalf of the user or the administrator. Application-level errors or even inadvertent user errors can mistakenly delete data or modify data in an unexpected way. In this case, snapshots can be used to recover to a known, well-defined state.
+
+Hot Backups:
+  With snapshots, it is possible to create backups on the fly, often required for auditing or compliance reasons
+ 
+Managing Real-time Data Analysis:
+  By using snapshots, query engines like Apache Drill can produce precise synchronic summaries of data sources subject to constant updates such as sensor data or social media streams. Using a snapshot for such analyses allows very precise comparisons to be done across multiple ever-changing data sources without having to stop real-time data ingestion.
+
+HDFS v2 Architecture
+---------------------------------------------
+
+Page 1 in HOP_Schema.pdf in Thesis/Documentation folder.
+
+
+
+HOP-HDFS Architecture
+---------------------------------------------
+  1.Our solution involves storing the metadata in a replicated, distributed, in-memory database that can scale up to several tens of nodes, all while maintaining the consistency semantics of HDFS
+  2.Multiple-Reader and Multiple-Writer concurrency model.
+  3.Multiple concurrent writers are now supported for the filesystem as a whole, but single-writer concurrency is enforced at the inode level
+
+Read-Only Root Level Single Snapshot(ROSS)
+---------------------------------------------
+  1.Explain the rules here itself.
+
+
+RO-Nested Snapshots
+----------------------------------------------
+1. Explain the rules while explaining the tables.
+

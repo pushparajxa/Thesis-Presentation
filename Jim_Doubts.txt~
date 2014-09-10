@@ -1,0 +1,3 @@
+1. delete function of Root Level Single Snapshot.
+    --Do we need nested transactions?
+    --How to make progress incase of failure? Start from top of the directory?
