@@ -42,3 +42,7 @@ RO-Nested Snapshots
 ----------------------------------------------
 1. Explain the rules while explaining the tables.
 
+RO-Nested Snapshots
+----------------------------------------------
+Join-Time(JT):: Joined time or created time
+

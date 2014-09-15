@@ -40,5 +40,9 @@ Read-Only Root Level Single Snapshot(ROSS)
 
 RO-Nested Snapshots
 ----------------------------------------------
+1. Explain the rules while explaining the tables.
 
+RO-Nested Snapshots
+----------------------------------------------
+Join-Time(JT):: 
 
