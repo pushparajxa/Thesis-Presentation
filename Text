@@ -1,0 +1,12 @@
+Slide--1
+--------------------------------------------
+Good afternoon everyone. 
+Today I will present my thesis work on Snapshotting Hadoop Distributed File System(HDFS) in Hadoop Open Platform as Service(HOPS).
+
+Slide--2
+--------------------------------------------
+click
+Imagine a hadoop cluster running on 1,000 machine storing peta bytes of data. Often System Administrator upgrades software version running on the cluster.The system upgrade may add new files, delete files and modifiy existing files.If the upgrade fails it should be possible to switch to the previous version of system. One option is to take back-up of all the data which is impractical considering the size of the data.
+
+Imagine another case where biology deparment in an university consisting of 10 professors working on analysis on DNA collected from 1,000,000 patients whose size amounts to peta bytes which is stored on a cluster of 100 machines. Each professor will be woring on many projects. In each project he will be running experiments on the data. Upon running experiments that data may be overwritten stopping him from running the experiments again unless he takes the back-up of huge amoount of data.Suppose he did 5 experiments then would like run different experiment from the data left aftere experiment 2 or may be experiment 3.
+It means he should take back-up of data after each experiment. This leads to huge amount of data.
